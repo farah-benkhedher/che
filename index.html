@@ -3,11 +3,17 @@
         <title> Portfolio </title>
         <link rel="icon" href="https://mir-s3-cdn-cf.behance.net/project_modules/disp/945b0225337909.563440870421b.png" type="image/x-icon"/>
     </head>
+    <header>
+        <form>
+            Search <input type = "text" name = "search"/>
+        </form>
+    </header>
     <aside>
-        <a href="#home">take me to Home</a>
-        <a href="#about me">About me</a>
+        <a href="#home"> Home </a>
+        <a href="#about me"> About me </a>
         <a href="#work"> Work </a>
-        <a href="#Resume"> Resume</a>
+        <a href="#Resume"> Resume </a>
+        <a href="contact"> Contact Me! </a>
     </aside>
     <body>
         <a name="home"></a>
@@ -15,7 +21,7 @@
             <b>I am farah ben khedher</b> 
         </h1>
         <p>
-            i'm a web developer <br>
+            i'm a web developer <br />
             I have a great passion for IT and I try to be better every day
         </p>
         <img src="https://scontent.fnbe1-2.fna.fbcdn.net/v/t39.30808-6/330398705_729483515548477_2051236089246495565_n.jpg?_nc_cat=102&cb=99be929b-3346023f&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=fq390_UlFMQAX_0vofg&_nc_ht=scontent.fnbe1-2.fna&oh=00_AfDsttpVZTkZ9ldoBUZVMl0aT9IHB3hViWcH-jDRd4ZU4Q&oe=64DD1BF8" alt="personal photo" width="200" height="250">
@@ -32,6 +38,7 @@
             <li>Editing videos</li>
             <li>Sports : football, basketball, tennis</li>
             <li>Gym</li>
+            <li>Gaming</li>
         </ul>
         </p> <br>
         <h2>
@@ -58,6 +65,11 @@
                     <li> HTML </li>
                     <li> CSS </li>
                 </ul>
+                <iframe
+                    width="400"
+                    height="300"
+                    src="https://youtu.be/gT0Lh1eYk78"
+                ></iframe>
             </p>
             <h3>
                 Tools :
@@ -74,18 +86,22 @@
                 <ul>
                     <li> Git </li>
                     <li> GitHub </li>
+                    <li>Excel</li>
+                    <li>PowerPoint</li>
+                    <li>Photoshop</li>
                 </ul>
             </p>
         <a name="Work"></a>
         <h1>
-            Work
+            <i> Work</i>
         </h1> 
         <p>
-            a current bachelor student in computer science 2023-2026
+            A current bachelor student in computer science 2023-2026 <br>
+            Learning a course at <a href="https://gomycode.com/fr/">GOMYCODE</a> : HTML, CSS, GIT, GITHUB, JAVASCRIPT
         </p>
         <a name="Resume"></a>
         <h1>
-            Resume
+            <i>Resume</i>
         </h1>
         <p>
             <ul>
@@ -95,7 +111,58 @@
             </ul>
         </p>
             <h3>
-                
+                Experience :
             </h3>
+            <p>
+                <ul>
+                    <li>
+                        Tunivisions Club Lycée Ibn Khaldoun Kairouan : 
+                        in charge of the marketing and media 2019-2021
+                    </li>
+                </ul>
+                <!-- they can look up for my work from 2019 to 2021-->
+                <a href="https://www.facebook.com/TunivisionsClubHighSchoolLIKKairouan/"> Take me to the club's facebook page</a>
+                <ul>
+                    <li>
+                        created a website similar to Amazoon
+                    </li>
+                </ul>
+            </p>
     </body>
+    <footer>
+        <h1>
+            <i> Contact me! </i>
+        </h1>
+        <a name="Contact"></a>
+        <table border="1">
+            <tr>
+                <th>facebook</th>
+                <th>Instagram</th>
+                <th>GitHub</th>
+                <th>Gmail</th>
+            </tr>
+            <tr>
+                <td><a href="https://m.facebook.com/profile.php?id=100040027291528"> Farah ben khedher</a></td>
+                <td><a href="https://www.instagram.com/farah_benkhedher/">farah_benkhedher</a></td>
+                <td><a href="https://github.com/farah-benkhedher">farah-benkhedher</a></td>
+                <td>farahbenkhedher7@gmail.com</td>
+            </tr>
+        </table>
+        <!--Submit if you faced a problem or to contact me-->
+        <form>
+            <label>Name:</label>
+            <input type="text" name="first name" placeholder="Type your name here" />
+            <br />
+            <label>Number:</label>
+            <input type="number" name="your phone number" value="24861471" />
+            <br />
+            <label>Birth Date:</label>
+            <input type="date" name="birthday" />
+            <br />
+            <textarea name="message" cols="30" rows="5">
+                Welcome to my Portfolio. How can i help ? Leave a message
+            </textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </footer>
 </html>
