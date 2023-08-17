@@ -1,0 +1,136 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set global font and background colors */
+body {
+    background-image: url('5da2218f8f31a772206b2c7440368a74.gif');
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0;
+    color: #ffc93363; /* Lighter shade of red */
+    font-family: roboto
+}
+
+/* Header styling */
+header {
+    background-color: black;
+    color: #FF5733; /* Lighter shade of red */
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Sidebar navigation */
+aside {
+    background-color: black;
+    color: #FF5733; /* Lighter shade of red */
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.titre{
+    margin-left: 10px;
+}
+/* Sidebar navigation links */
+aside a {
+    display: block;
+    color: #FF5733; /* Lighter shade of red */
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 0.3s ease-in-out;
+    font-family: roboto
+}
+
+aside a:hover {
+    color: white;
+}
+
+/* Main content sections */
+section {
+    padding: 20px;
+    background-color: #1A1A1A; /* Darker shade of black */
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1s ease-in-out, slideDown 1s ease-in-out;
+}
+
+/* Keyframe animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Footer styling */
+footer {
+    background-color: black;
+    color: #FF5733; /* Lighter shade of red */
+    text-align: center;
+    padding: 20px;
+    font-family: roboto
+}
+
+/* Contact details table */
+table {
+    margin: auto;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #FF5733; /* Lighter shade of red */
+}
+
+/* Form styling */
+form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"], form input[type="number"], form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #FF5733; /* Lighter shade of red */
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #FF5733; /* Lighter shade of red */
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: white;
+    color: black;
+}
