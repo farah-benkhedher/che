@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --accent-color: #069fe6;
+    --light-gray: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    min-height: 100vh;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+.sidecart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 350px;
+    background-color: #fff;
+    box-shadow: -10px 0 15px var(--light-gray);
+}
+
