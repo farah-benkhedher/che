@@ -10,6 +10,9 @@
     --light-gray: rgba(75, 66, 66, 0.1);
 }
 
+button:hover{
+    opacity: 0,0;
+}
 body {
     min-height: 100vh;
     background-color: #df68fd;
@@ -73,6 +76,92 @@ body {
     flex: 1;
     overflow-x: hidden;
 }
+
+.cart_item{
+    position: relative;
+    padding: 1rem;
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    border-bottom: 1px var(--light-gray);
+}
+
+.remove_item{
+    position: absolute;
+    top: 10px;
+    right: -2%;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(100, 163, 245, 0.397);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.remove_item span{
+    color: #ffffff;
+    font-size: 20px;
+    user-select: none;
+}
+.item_img{
+    flex: 1;
+}
+
+.item_img img{
+    width: 99%;
+    height: 85%;
+    object-fit: contain;
+}
+
+.item_details{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+.item_details p {
+    color: #666;
+
+}
+
+.item_details .quantity{
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.item_details .quantity span{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px var(--light-gray), -1px -1px 2px var(--light-gray);
+    user-select: none;
+    transition: scale 0.2s ease;
+}
+
+.item_details .quantity span:hover{
+    scale: 1.1;
+}
+.item_details .quantity span:active{
+    scale: 1;
+}
+
+.quantity span :first-of-type{
+    font-size: 2rem;
+    padding-bottom: 5px;
+}
 /*Cart Actions */
 .cart_actions{
     padding: 1rem 2rem;
@@ -97,4 +186,14 @@ body {
     border: none;
     background-color: rgba(255, 94, 255, 0.637);
     border-radius: 15px;
+    color: aliceblue;
+    padding: 15px;
+    font-size: 15px;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    cursor:pointer;
+}
+
+.cart_actions button:nth-of-type(2){
+    background-color:rgb(0, 0, 0);
 }
